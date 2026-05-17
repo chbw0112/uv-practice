@@ -1,5 +1,5 @@
-import httpx
-response = httpx.get("https://jsonplaceholder.typicode.com/todos/1")
+import requests
+response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
 print(f"상태 코드: {response.status_code}")
 data = response.json()
 print(f"할 일 제목: {data['title']}")
